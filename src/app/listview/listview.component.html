@@ -1,0 +1,43 @@
+<app-navbar> </app-navbar>
+<app-page1></app-page1>
+<div class="filter">
+    <label>Filter :</label>
+    <input type="text" placeholder="Search Here" [(ngModel)]="search2" >
+</div>
+<div class="row">
+   
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>          </th>
+                <th class="firstname">First Name</th>
+                <th class="lastname">Last Name</th>
+                <th class="address">Address</th>
+                <th class="city">City</th>
+                <th class="state">State</th>
+                <th class="ordertotal">OrderTotal</th>
+                </tr>
+            </thead>
+            <tbody class="tablebody">
+                <tr *ngFor="let d of cd | paginate:{itemsPerPage: 4,currentPage: p} | search :search2">
+                    <td><img *ngIf="d?.gender==='male'" src="./assets/male.png" style="padding-top:10px ;
+        padding-left: 10px; width: 50px; height: 60px;">
+                        <img *ngIf="d?.gender==='female'" src="./assets/female.png" style="padding-top:10px ;
+        padding-left: 10px; width: 50px; height: 60px;">
+                    </td>
+                    <td class="firstnamed" style="color:#007af8;" [routerLink]="['/CustomerDetailsComponent',d.id]">{{d?.firstName}}</td>
+                    <td class="lastnamed">{{d?.lastName}}</td>
+                    <td class="addressd">{{d?.address}}</td>
+                    <td class="cityd">{{d?.city}}</td>
+                    <td class="stated">{{d?.state?.name}}</td>
+                    <td class="ordertotald">
+                        <div>
+                            {{d?.totalCost|number}}
+                        </div>
+                    <td><button class="ViewOrder" [routerLink]="['/CustomerOrdersComponent',d.id]">ViewOrder</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+</div>
+<pagination-controls (pageChange)="p = $event" class="float-right page"></pagination-controls>

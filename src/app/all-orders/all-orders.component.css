@@ -1,0 +1,15 @@
+.row
+{
+    padding: 15px;
+}
+.ViewOrder
+{
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    background-color: transparent;
+}
+.flow
+{
+    overflow-x: auto;
+}

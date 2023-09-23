@@ -1,0 +1,23 @@
+.table{
+   margin-left: 40px;
+   overflow-y: scroll;
+
+}
+
+.name
+{
+    width: 200px;
+    height:auto;
+}
+.map
+{
+    overflow-x: auto;
+ margin-left:30px;
+ width: auto;
+
+}
+.mapdata
+{
+    margin-top: 30px;
+    display: flex;
+}

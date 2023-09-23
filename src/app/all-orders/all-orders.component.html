@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="flow">
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+          
+            <th scope="col">Product Name</th>
+            <th scope="col">Item Cost</th>
+            <th scope="col">Total Cost</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of customerdata">
+            <td scope="row">{{item.id}}</td>
+            <td>{{item.firstName}} {{item.lastName}}</td>
+          
+            <td>
+                <ul>
+                   <h6><li *ngFor="let i of item.orders">{{i.productName}}</li></h6>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let i of item.orders">{{i.itemCost}}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <h6>{{item?.totalCost | number}}</h6>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

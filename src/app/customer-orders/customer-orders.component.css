@@ -1,0 +1,38 @@
+.move
+{
+    margin-left: 20px;
+}
+.theader
+{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ProName
+{
+
+    padding: 10px;
+}
+.Itemcost
+{
+    
+    padding-right: 10px;
+}
+.table1
+{
+    width: 700px;
+    height:150px;
+    margin-left: 20px;
+    
+}
+.scroll
+{
+    overflow-x: auto;
+}
+.view
+{
+    background-color:transparent;
+    border:none;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}

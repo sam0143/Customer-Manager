@@ -1,0 +1,40 @@
+.move
+{
+    margin-left: 20px;
+}
+.custdata
+{
+    display: flex;
+    margin-left: 10px;
+}
+.custtext
+{
+    padding-left: 80px;
+    margin-top: 10px;
+}
+.name
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.custtext{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.map
+{
+    height:200px;
+   max-width:600px;
+   margin-top: 20px;
+   margin-right: 150px;
+   margin-left:5px;
+}
+.view
+{
+    background-color:transparent;
+    border:none;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}

@@ -1,0 +1,59 @@
+.card-view {
+    border: 1px solid black;
+    margin: 15px;
+    height: 130px;
+    width: 280px;
+    cursor: pointer;
+}
+.container
+{
+    margin-top: 35px;
+}
+
+.cv-header {
+    height: 30px;
+    background-color: #007af8;
+}
+.filter
+{
+
+    color:#5b5959;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.names
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: white;
+    
+}
+.data
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+    font-size: 16px;
+    margin-right: 50px;
+    border:none; 
+    color:#007af8; 
+    background:none;
+    margin-left: -8px;
+}
+#list-view {
+    border: 1px solid black;
+    border-left: 0px solid;
+    border-right: 0px solid;
+}
+.row    
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-view span {
+    padding: 30px;
+}
+.page
+{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

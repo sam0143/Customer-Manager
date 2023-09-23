@@ -1,0 +1,124 @@
+.text-center{
+    text-align: center;
+    margin-top: 50px;
+}
+.head
+{
+    max-height: 100px;
+    background-color:#007af8;
+    color:aliceblue;
+    text-align: center;
+    padding-top: 0.5%;
+    height:70px;
+}
+.span
+{
+    padding-left: 300px;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color:whitesmoke;
+}
+.container{
+   margin-top: 50px;
+    height: 50%;
+    width: 20%;
+    text-align: left;
+}
+.d-flex-center{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mat-form-field{
+    width: 100%;
+}
+.mt-top{
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 15px;
+  
+}
+.signbut
+{
+  background-color:#007af8;
+    width:250px;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+.signbut:valid
+{
+  background-color: #25bd3c;
+  font-weight: bold;
+}
+.forgot,.create
+{
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.forgot:hover,.create:hover
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+.mt-top-2{
+    margin-top: 10px;
+}
+.redtext
+{
+    color: red;
+    font-size: 13px;
+    padding-top: 2px;
+}
+
+
+  .input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 10px;
+    margin-bottom: 20px;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.3s all;
+    cursor: text;
+    color: #040c08;
+  }
+  input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.2rem 0;
+    border-bottom: 2px solid #ebd6d6;
+  }
+  
+  input:focus,
+  input:valid{
+    border-color: #68bd75;
+    
+  }
+  input:focus~label,
+  input:valid~label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #171616;
+    top: -25px;
+  }
+  .card
+  {
+    border-radius:5%;
+    border-color: #0a0c0b;
+    text-align: center;
+
+  }
+  

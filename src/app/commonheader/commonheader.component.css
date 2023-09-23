@@ -1,0 +1,24 @@
+.img2
+{
+    height:22px;
+    width:25px;
+   float:left;
+   margin-right: 5px;
+   margin-left: 45px;
+   margin-top: 15px;
+}
+#custtext
+{
+font-size: 22px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-left:40px;
+padding-top: 12px;
+}
+.view
+{
+    background-color:transparent;
+    border:none;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}

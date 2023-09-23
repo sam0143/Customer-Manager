@@ -1,0 +1,32 @@
+<app-navbar> </app-navbar>
+<app-page1> </app-page1>
+<div style="float:right; margin-top: -7px; margin-right: 100px ">
+    <label class="filter">Filter :</label>
+    <input type="text" placeholder="Search Here" [(ngModel)]="search1">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let d of cd | paginate:{itemsPerPage: 8,currentPage: p} | search :search1">
+            <div class="card-view">
+                <div class="cv-header">
+                    <span class="names" style="padding:10px;">{{ d.firstName + ' ' + d.lastName }}
+                        <i class="fa fa-pencil-square-o" aria-hidden="true" type="button" [routerLink]="['/EditCustomerComponent',d.id]"
+                            style="color:white; float: right; height: 5px;padding: 5px;"></i>
+                    </span>
+                </div>
+                <div>
+                    <img *ngIf="d.gender==='male'" src="./assets/male.png"
+                        style="padding-top:15px; padding-left: 10px; width: 85px; height: 80px;">
+                    <img *ngIf="d.gender==='female'" src="./assets/female.png"
+                        style="padding-top:15px; padding-left: 10px; width: 85px; height: 80px;">
+                    <div style=" float:right; margin-top:10px;">
+                        <label class="data1">{{d.city}}</label><br>
+                        <label class="data1">{{d.state.name }}</label><br>
+                        <button class="data" type="button" [routerLink]="['/CustomerDetailsComponent',d.id]">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<pagination-controls (pageChange)="p = $event" class="float-right page"></pagination-controls>

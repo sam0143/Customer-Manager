@@ -1,0 +1,16 @@
+<app-navbar> </app-navbar>
+<app-page1> </app-page1>
+<div class="mapdata">
+    <div>
+    <table class="table table-striped name">
+        <tbody>
+        <tr *ngFor="let d of customers">
+            <td>{{d.firstName+''+d.lastName}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    <div class="map">
+        <google-map [zoom]="zoom"></google-map>
+</div>
+</div>

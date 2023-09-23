@@ -1,0 +1,33 @@
+<app-navbar> </app-navbar>
+<app-page1></app-page1>
+<div class="container">
+  <legend class="new"> Add New Customer</legend>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="txtName" class="form-label">firstName</label>
+      <input type="text" name="firstName" [(ngModel)] = "productForm.firstName" [ngModelOptions]="{standalone: true}" class="form-control" id="txtName" />
+    </div>
+    <div class="col-md-6">
+      <label for="txtName" class="form-label">lastName</label>
+      <input type="text" name="lastName" [(ngModel)] = "productForm.lastName" [ngModelOptions]="{standalone: true}" class="form-control" id="txtName" />
+    </div>
+    <div class="col-md-6">
+      <label for="gender" class="form-label">Gender</label>
+      <input type="text" name="gender" [(ngModel)] = "productForm.gender" [ngModelOptions]="{standalone: true}" class="form-control" id="txtName" />
+    </div>
+    <div class="col-md-6">
+      <label for="txtName" class="form-label">address</label>
+      <input type="text" name="address" [(ngModel)] = "productForm.address" [ngModelOptions]="{standalone: true}" class="form-control" id="txtName" />
+    </div>
+    <div class="col-md-6">
+      <label for="txtName" class="form-label">city</label>
+      <input type="text" name="city" [(ngModel)] = "productForm.city" [ngModelOptions]="{standalone: true}" class="form-control" id="txtName" />
+    </div>
+    <div class="col-md-6">
+      <label for="txtPrice" class="form-label">state</label>
+      <input type="text" [(ngModel)] = "productForm.state"  class="form-control" id="state"/>
+    </div>
+<div class="submitbtn">
+    <button type="button" (click)="create()" class="btn btn-primary">Submit</button>
+</div></form>
+</div>

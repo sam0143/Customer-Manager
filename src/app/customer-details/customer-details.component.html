@@ -1,0 +1,27 @@
+<app-commonheader> </app-commonheader>
+<div class="move">
+    <button class="view"><i class="fa fa-list subheader" aria-hidden="true"> Customer
+            Details</i></button>
+    <button class="view"><i class="fa fa-tag subheader" aria-hidden="true" [routerLink]="['/CustomerOrdersComponent',customerdata.id]"> Customer
+            Order</i></button>
+    <button class="view"><i class="fa fa-pencil-square-o subheader" aria-hidden="true" [routerLink]="['/EditCustomerComponent',customerdata.id]">
+            Edit Customer</i></button>
+</div>
+<br>
+<div class="custdata" >
+    <span>
+        <img *ngIf="customerdata.gender==='male'" src="../assets/male.png"
+            style="padding-top:15px; padding-left: 10px; width: 85px; height: 80px;">
+        <img *ngIf="customerdata.gender==='female'" src="../assets/female.png"
+            style="padding-top:15px; padding-left: 10px; width: 85px; height: 80px;">
+    </span>
+    <span class="custtext">
+        <label class="name">{{customerdata.firstName+ " " + customerdata.lastName}}</label><br><br>
+        <label class="text"> {{customerdata.address}}</label><br>
+
+        <label class="text"> {{customerdata.city}} </label>
+    </span>
+</div>
+<div class="map">
+    <google-map height="500px" width="100%" [zoom]="zoom"></google-map>
+</div>

@@ -1,0 +1,20 @@
+.move
+{
+    margin-left: 20px;
+}
+.view
+{
+    background-color:transparent;
+    border:none;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}
+.buttonsDiv
+{
+    text-align: center;
+}
+.btn{
+
+    margin: 10px;
+}
